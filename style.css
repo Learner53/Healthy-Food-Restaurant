@@ -117,6 +117,10 @@
         font-weight: 300;
         letter-spacing: 2px;
     }
+    .grid-items__1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
 }
 
 /* ------------ Mobile Styling ------------ */
@@ -265,7 +269,7 @@
 
     .grid-text-container {
         /* position: absolute; */
-        margin: 30px 15px;
+        margin: 30px 15px 55px;
     }
     .grid-text-container h3 {
         font-size: 35px;

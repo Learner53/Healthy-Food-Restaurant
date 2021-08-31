@@ -10,6 +10,16 @@
     background-color: #7287AE;
 }
 
+.menu-image--container {
+    width: 100%;
+}
+.menu-image--container img{
+    width: 100%;
+    object-fit: contain;
+}
+.grid-items {
+    position: relative;
+}
 /* ------------ Desktop Styling ------------ */
 
 @media (min-width: 1200px) {
@@ -68,6 +78,44 @@
     }
     .mobile-navigation--bar {
         display: none;
+    }
+    .grid--container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-text-container {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translate(0, -50%);
+    }
+    .grid-text-container h3 {
+        font-size: 53px;
+        line-height: 70px;
+        font-weight: 700;
+        font-family: 'Ubuntu', sans-serif;
+        max-width: 418px;
+    }
+    .grid-text-container p {
+        font-size: 29px;
+        line-height: 35px;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+        margin: 12px 0 50px;
+        max-width: 559px;
+
+    }
+    .grid-text-container a {
+        border-radius: 37.5px;
+        padding: 15px 60px;
+        background-color: #7287AE;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
     }
 }
 
@@ -213,5 +261,38 @@
     .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
         top: 0;
         transform: rotate(-135deg); 
+    }
+
+    .grid-text-container {
+        /* position: absolute; */
+        margin: 30px 15px;
+    }
+    .grid-text-container h3 {
+        font-size: 35px;
+        line-height: 44px;
+        font-weight: 700;
+        font-family: 'Ubuntu', sans-serif;
+        max-width: 300px;
+    }
+    .grid-text-container p {
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+        margin: 8px 0 40px;
+        max-width: 400px;
+
+    }
+    .grid-text-container a {
+        border-radius: 37.5px;
+        padding: 15px 60px;
+        background-color: #7287AE;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+
     }
 }
